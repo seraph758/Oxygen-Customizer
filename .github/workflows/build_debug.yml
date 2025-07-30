@@ -23,7 +23,7 @@ jobs:
       run: ./gradlew assembleDebug
 
     - name: Upload APKs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: all-apks
         path: '**/build/outputs/apk/debug/*.apk'
