@@ -31,8 +31,7 @@ public class XPrefs {
         boolean moreLogging = Xprefs.getBoolean(Constants.Preferences.General.PREF_MORE_LOGGING, false);
 
         for (XposedMods thisMod : XPLauncher.runningMods) {
-            thisMod.mDebug = BuildConfig.VERSION_NAME.contains("nightly") || moreLogging;
-            thisMod.updatePrefs(key);
+            thisMod.mDebug = false;
         }
     }
 }
