@@ -23,13 +23,15 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
-
-      - name: Build debug APK
-        run: ./gradlew assembleDebug
-
-      - name: Upload debug APK
+        
+      - name: Build release with Gradle
+        if: github.repository == 'seraph758/Oxygen-Customizer'
+        run: ./gradlew assembleRelease
+        
+      - name: Upload release Build Artifact
+        if: github.repository == 'seraph758/Oxygen-Customizer'
         uses: actions/upload-artifact@v4
         with:
-          name: debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          name: "Oxygen Customizer ${{ env.VERSION_NAME }} Dev (#${{github.run_number}})"
+          path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
