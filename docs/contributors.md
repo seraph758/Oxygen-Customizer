@@ -74,6 +74,13 @@ Thanks to those contributors, this project exists:
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/seraph758">
+                    <img src="https://avatars.githubusercontent.com/u/10000026?v=4" width="32;" alt="seraph758"/>
+                    <br />
+                    <sub><b>seraph758</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/tugaia56">
                     <img src="https://avatars.githubusercontent.com/u/46009615?v=4" width="32;" alt="tugaia56"/>
                     <br />
@@ -94,6 +101,8 @@ Thanks to those contributors, this project exists:
                     <sub><b>DrDisagree</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/rustammendel">
                     <img src="https://avatars.githubusercontent.com/u/30227161?v=4" width="32;" alt="rustammendel"/>
